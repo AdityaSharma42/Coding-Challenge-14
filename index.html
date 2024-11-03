@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Customer Support Ticket </title>
+<style> /*styling to fix margins, font styles, background colors and padding*/
+    body{
+        font-family:'Times New Roman', Times, serif;
+        background-color: antiquewhite;
+        margin: 1;
+        padding: 25px;
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        color:brown;
+    }
+</style>
 <head>
     <body>
         <h1> Customer Support Ticket </h1>
     </header>
     <main>
-        <div id="ticket-container"></div>
-        <div id="error-message"></div>
+        <div id="loading"> Loading Tickets.... </div>
+        <div id="ticket-container"></div> <!--the container holds the tickets that have been fetched-->
+        <div id="error-message"></div> <!--displaying error messages-->
     </main>
     <script src="main.js"></script>
     </body>
